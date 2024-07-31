@@ -59,19 +59,36 @@
             background-color: #333;
             overflow: hidden;
         }
+
+        .navigation-header {
+            z-index: 2;
+        }
         .sidebar {
-            width: 160px; /* Set the width of the sidebar */
+            z-index: 1;
+        }
+        /* The sidebar menu */
+        .sidebar {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 200px; /* Set the width of the sidebar */
             position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-            z-index: 1; /* Stay on top */
             top: 0; /* Stay at the top */
             left: 0;
-            background-color: #111; /* Black */
+            background-color: #111; /* Black background color */
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 20px;
         }
+
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Projects</a></li>
+            <li><a href="#section3">Contact</a></li>
+            <!-- Add more headings as needed -->
+        </ul>
+    </div>
     <header class="navigation-header">
         <nav>
             <a  class="active" href="#home">🏠Home</a>
@@ -95,13 +112,6 @@
         <a href="https://github.com/patrick437" class="fa fa-github"></a>
         <!-- Add more social links as needed -->
     </div>
-    <div class="sidebar">
-        <ul>
-            <li><a href="#section1">Introduction</a></li>
-            <li><a href="#section2">Projects</a></li>
-            <li><a href="#section3">Contact</a></li>
-            <!-- Add more headings as needed -->
-        </ul>
-    </div>
+    
 </body>
 </html>
